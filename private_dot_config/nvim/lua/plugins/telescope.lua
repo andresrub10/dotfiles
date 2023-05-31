@@ -3,7 +3,8 @@ return {
 		'nvim-telescope/telescope.nvim', tag = '0.1.1',
 		dependencies = { 'nvim-lua/plenary.nvim' },
 		keys = {
-			{ "<leader>ff", "<cmd>lua require'telescope'.extensions.file_browser.file_browser({path = vim.fn.expand('%:p:h')})<cr>",desc = "Telescope find files" },
+			{ "<leader>fb", "<cmd>lua require'telescope'.extensions.file_browser.file_browser({path = vim.fn.expand('%:p:h')})<cr>",desc = "Telescope file browser" },
+			{ "<leader>ff", "<cmd>Telescope find_files<cr>",mode = {"n","v"},desc = "Telescope find files" },
 			{ "<leader>fg", "<cmd>Telescope grep_string<cr>",mode = {"n","v"},desc = "Telescope grep string" },
 			{ "<leader>fl", "<cmd>Telescope live_grep<cr>",mode = {"n","v"},desc = "Telescope live string" },
 			{ "<leader>fo", "<cmd>Telescope oldfiles<cr>",desc = "Telescope old files" },
