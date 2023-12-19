@@ -6,5 +6,9 @@ return {
         require("lspconfig").yamlls.setup {}
         require("lspconfig").jdtls.setup {}
         require("lspconfig").gopls.setup {}
+        require("lspconfig").lemminx.setup {}
+        require("lspconfig").tsserver.setup {}
+        require("lspconfig").jsonls.setup {}
+
     end,
 }
